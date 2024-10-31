@@ -4,84 +4,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="mystyle.css">
-    <script src="https://kit.fontawesome.com/a318974deb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Real State Multi</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/sel.logo.webp" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PROPERTIES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOGS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT </a>
-                    </li>
-                    <li class="nav-item">
-                        <i class="fa-solid fa-magnifying-glass search-bar sub-nav-link"></i>
-                    </li>
-                </ul>
+    <div class="container-fluid fixed-top nav-tp">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" href="#">PROPERTIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" href="#">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" aria-current="page" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" id="nav-bar-a2" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" id="nav-bar-a2" href="#"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="main-container">
-        <div class="main-one">
-            <div class="main-one-txt">
-                <h5>THE JOY OF HOME OWNING</h5>
-                <h1>Find Your New Home</h1>
-                <button type="button" class="main-btn-one">Learn More</button>
+        </nav>
+    </div>
+
+    <div class="bg mb-5">
+        <div class="container">
+            <div class="row hero-sec">
+                <div class="col hero-left d-flex justify-content-center flex-column">
+                    <p class="text-secondary fs-6">THE JOY OF HOME OWNING</p>
+                    <h1 class="fw-bold">Find Your New Home</h1>
+                    <button class="fs-5 bg-danger mt-4">Learn More</button>
+                </div>
             </div>
-            <div class="main-one-form"></div>
-        </div>
-        <div class="main-two">
-
-        </div>
-        <div class="main-three">
-
-        </div>
-        <div class="main-four">
-
-        </div>
-        <div class="main-five">
-
-        </div>
-        <div class="main-six">
-
-        </div>
-        <div class="main-seven">
-
         </div>
     </div>
+
+    <div class="container hero-form py-5">
+        <div class="row">
+            <div class="col text-center px-4">
+                <h4>Search Properties for</h4>
+                <div class="form d-flex flex-column row-gap-3 text-secondary">
+                    <select class="form-select py-2 fs-5 text-secondary" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option selected>Choose Locations</option>
+                        <option value="1">Property Type</option>
+                        <option value="2">Bedrooms</option>
+                    </select>
+                    <select class="form-select py-2 fs-5 text-secondary" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option>Choose Locations</option>
+                        <option selected value="1">Property Type</option>
+                        <option value="2">Bedrooms</option>
+                    </select>
+                    <select class="form-select py-2 fs-5 text-secondary" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option>Choose Locations</option>
+                        <option value="1">Property Type</option>
+                        <option selected value="2">Bedrooms</option>
+                    </select>
+                    <select class="form-select py-2 fs-5 text-secondary" id="floatingSelect"
+                        aria-label="Floating label select example">
+                        <option>Choose Locations</option>
+                        <option value="1">Property Type</option>
+                        <option selected value="2">Bedrooms</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-12 text-start">
+                            <label for="customRange1" class="form-label">Price Range</label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                        <div class="col-12 text-start">
+                            <label for="customRange1" class="form-label">Property Area</label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                        <div class="col-12">
+                            <button class="fs-5 mt-4 py-2 px-4">Search Property</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container sec-2-cont">
+        <div class="row  mt-5 mb-5 pt-5 sec-2">
+            <div class="col-sm-12 col-md-12 col-lg-5 d-flex justify-content-center sec-2-left">
+                <div class="row">
+                    <div class="col pt-5"><img src="./Images/welcome-1.jpg" width="90%" alt="img"></div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-7 px-5 d-flex flex-column align-item-center pt-5 sec-2-right">
+                <h2>Welcome to SEL Center</h2>
+                <p class="fs-5">inappropriate behavior is often laughed off as “boys will be boys,” women face
+                    higher
+                    conduct
+                    standards especially in the workplace. That’s why it’s crucial that, as women, our behavior
+                    on the
+                    job is beyond reproach. inappropriate behavior is often laughed.</p>
+                <div class="row gap-2">
+                    <div class="col-sm-12 col-md-12 col-lg-3 p-3 sec-col">
+                        <a class="fs-2 text-danger" href="#"><i class="fa-solid fa-database"></i></a>
+                        <p class="fs-3 fw-medium">$2.5M</p>
+                        <span class="fs-6 text-secondary">Total Donation</span>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 p-3 sec-col">
+                        <a class="fs-2 text-danger" href="#"><i class="fa-solid fa-copy"></i></a>
+                        <p class="fs-3 fw-medium">1465</p>
+                        <span class="fs-6 text-secondary">Total Projects</span>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 p-3 sec-col">
+                        <a class="fs-2 text-danger " href="#"><i class="fa-solid fa-user-group"></i></a>
+                        <p class="fs-3 fw-medium">3965</p>
+                        <span class="fs-6 text-secondary">Total Volunteers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="fw-bold">Our Top Rated Properties</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod
+                    tempor incididunt</p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5 d-flex row-gap-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 22rem; height: auto;">
+                    <img src="./Images/pp-1.jpg" class="card-img-top" alt="img">
+                    <h4 class="pt-4 px-3">04 Bed Duplex</h4>
+                    <div class="row px-4 gap-2">
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">04 Beds</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">03 Baths</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn d-none"></button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">750 sqm</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-check text-success"></i>
+                                Pool</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i> Bar</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i>
+                                Pool</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-3 px-3">
+                        <div class="col col-sm-8">
+                            <h4 class="mt-1">Total: $3.5M</h4>
+                        </div>
+                        <div class="col col-sm-4">
+                            <button class="sec-3-btn bg-danger text-white p-2">For Sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 22rem; height: auto;">
+                    <img src="./Images/pp-2.jpg" class="card-img-top" alt="img">
+                    <h4 class="pt-4 px-3">04 Bed Duplex</h4>
+                    <div class="row px-4 gap-2">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 p-0">
+                            <button class="sec-3-btn">04 Beds</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">03 Baths</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn d-none"></button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">750 sqm</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-check text-success"></i>
+                                Pool</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i> Bar</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i>
+                                Pool</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-3 px-3">
+                        <div class="col col-sm-8">
+                            <h4 class="mt-1">Total: $3.5M</h4>
+                        </div>
+                        <div class="col col-sm-4">
+                            <button class="sec-3-btn bg-danger text-white p-2">For Sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                <div class="card" style="width: 22rem; height: auto;">
+                    <img src="./Images/pp-3.jpg" class="card-img-top" alt="img">
+                    <h4 class="pt-4 px-3">04 Bed Duplex</h4>
+                    <div class="row px-4 gap-2">
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">04 Beds</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">03 Baths</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn d-none"></button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn">750 sqm</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-check text-success"></i>
+                                Pool</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i> Bar</button>
+                        </div>
+                        <div class="col-3 col-sm-3 p-0">
+                            <button class="sec-3-btn"><i class="fa-solid fa-xmark text-danger"></i>
+                                Pool</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-3 px-3">
+                        <div class="col col-sm-8">
+                            <h4 class="mt-1">Total: $3.5M</h4>
+                        </div>
+                        <div class="col col-sm-4">
+                            <button class="sec-3-btn bg-danger text-white p-2">For Sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column justify-content-end" style="height:300px;">
+                    <h2 class="text-white fs-1">Client’s Feedback</h2>
+                    <p class="text-light">inappropriate behavior is often laughed off as “boys will be boys,”
+                        women face
+                        higher conduct
+                        standards especially in the workplace. That’s why it’s crucial that, as women, our
+                        behavior on
+                        the job is beyond reproach. inappropriate behavior is often laughed.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 mb-5">
+                    <div class="row d-flex justify-content-center gap-5">
+                        <div class="col-sm-8 col-md-5 col-lg-5 sec-4-card text-center py-5">
+                            <img src="./Images/testi-1.png" alt="img">
+                            <p class="text-secondary-emphasis pt-3">inappropriate behavior is often laughed off
+                                as “boys
+                                will be boys,” women face higher
+                                conduct standards especially in the workplace. That’s why it’s crucial that, as
+                                women,
+                            <h4 class="sec-4-h4">Cordelia barton</h4>
+                            <span class="text-secondary-emphasis">CEO at Google</span>
+                        </div>
+                        <div class="col-sm-8 col-md-5 col-lg-5 sec-4-card text-center py-5">
+                            <img src="./Images/testi-2.png" alt="img">
+                            <p class="text-secondary-emphasis pt-3">inappropriate behavior is often laughed off
+                                as “boys
+                                will be boys,” women face higher
+                                conduct standards especially in the workplace. That’s why it’s crucial that, as
+                                women,
+                            <h4 class="sec-4-h4">Cordelia barton</h4>
+                            <span class="text-secondary-emphasis">CEO at Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container my-5">
+        <div class="row py-5">
+            <div class="col text-center">
+                <h2 class="fw-bold">Demandable Cities</h2>
+                <p class="text-secondary">We all live in an age that belongs to the young at heart. Life that is
+                    becoming extremely fast, day
+                    to day,</p>
+            </div>
+            <div class="row d-flex justify-content-center row-gap-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column sec-5">
+                    <img src="./Images/cities-1.jpg.webp" alt="city-img">
+                    <div class="sec-5-btn">
+                        <button class="p-2 ms-5">
+                            <p>Book Now</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column sec-5">
+                    <img class="" src="./Images/sec5-img2.webp" alt="city-img">
+                    <div class="sec-5-btn">
+                        <button class="p-2 ms-5">
+                            <p>Book Now</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column sec-5">
+                    <img src="./Images/sec5-img3.webp" alt="city-img">
+                    <div class="sec-5-btn">
+                        <button class="p-2 ms-5">
+                            <p>Book Now</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column sec-5">
+                    <img src="./Images/sec5-img4.webp" alt="city-img">
+                    <div class="sec-5-btn">
+                        <button class="p-2 ms-5">
+                            <p>Book Now</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <h2 class="fw-bold">Why we are the best</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod
+                    tempor</p>
+            </div>
+        </div>
+        <div class="row d-flex gap-3 justify-content-center ">
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-user"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-book"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-phone"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-rocket"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-diamond"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 py-4 sec-6">
+                <h5><i class="fa-solid fa-message"></i> Expert Technicians</h5>
+                <p class="pt-2">Usage of the Internet is becoming more common due to rapid advancement of
+                    technology and power.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-8-bg">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+                    <h4 class="text-white">ABOUT US</h4>
+                    <P class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut
+                        labore dolore magna aliqua.</P>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 pt-5">
+                    <h4 class="text-white">NEWSLETTER</h4>
+                    <P class="text-secondary">Stay updated with our latest trends</P>
+                    <div class="row">
+                        <div class="col-lg-12 sec-8-form">
+                            <input class="bg-black p-2" type="search" placeholder="Email Address">
+                            <button class="bg-danger py-2 px-3"><i
+                                    class="fa-solid fa-arrow-right bg-danger text-light"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 pt-5">
+                    <h4 class="text-white">INSTAGRAM FEED</h4>
+                    <div class="row">
+                        <div class="col">
+                            <img class="p-1" src="Images/Image-01.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-02.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-03.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-04.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-05.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-06.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-07.jpg" alt="img">
+                            <img class="p-1" src="Images/Image-08.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 pt-5">
+                    <h4 class="text-white">FOLLOW US</h4>
+                    <P class="text-secondary">Let us be social</P>
+                    <a class="sec-8-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="sec-8-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="sec-8-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="sec-8-link" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col pt-4 pb-5">
+                    <p class="text-secondary text-center">Copyright ©2024 All rights reserved | This template is
+                        made
+                        with by <span class="text-danger">Colorlib</span><i class="fa-regular fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
